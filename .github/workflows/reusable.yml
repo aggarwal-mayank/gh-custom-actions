@@ -4,6 +4,8 @@ on:
 jobs:
   reusable_job:
     runs-on: ubuntu-latest
+    environment:
+      name: dev
     steps:
       - name: Get Env Secrets
         run: |
